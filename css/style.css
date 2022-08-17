@@ -1,0 +1,111 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../fonts/Noto_Sans/NotoSans-Regular.eot");
+  src: local("☺"), url("../fonts/Noto_Sans/NotoSans-Regular.woff2") format("woff2"), url("../fonts/Noto_Sans/NotoSans-Regular.woff") format("woff"), url("../fonts/Noto_Sans/NotoSans-Regular.ttf") format("truetype"), url("../fonts/Noto_Sans/NotoSans-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../fonts/Noto_Sans/NotoSans-Bold.eot");
+  src: local("☺"), url("../fonts/Noto_Sans/NotoSans-Bold.woff2") format("woff2"), url("../fonts/Noto_Sans/NotoSans-Bold.woff") format("woff"), url("../fonts/Noto_Sans/NotoSans-Bold.ttf") format("truetype"), url("../fonts/Noto_Sans/NotoSans-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../fonts/Myriad_Pro/myriadpro-bold.eot");
+  src: local("☺"), url("../fonts/Myriad_Pro/myriadpro-bold.woff2") format("woff2"), url("../fonts/Myriad_Pro/myriadpro-bold.woff") format("woff"), url("../fonts/Myriad_Pro/myriadpro-bold.ttf") format("truetype"), url("../fonts/Myriad_Pro/myriadpro-bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, header, footer, aside {
+  display: block;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+.contacts {
+  font-family: icons;
+  background-color: rgb(6, 90, 152);
+}
+
+.resume {
+  background-color: #0052c2;
+}
+
+.myPhoto {
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  width: 110px;
+  height: 110px;
+  border-radius: 80px;
+  box-shadow: 0px 0px 40px 0px #48779f;
+}
+
+.header {
+  position: relative;
+  padding: 50px 0 60px;
+  background-image: url("../../img/bg/bg_header_767.jpg");
+  background-size: cover;
+}
+.header__content {
+  position: relative;
+  text-align: center;
+  z-index: 10;
+}
