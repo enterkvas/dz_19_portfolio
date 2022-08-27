@@ -24,9 +24,17 @@
 
 @import "base/base";
 @import "base/null_styles";
-@import "base/variables";
+@import "base/layout";
+// @import "base/variables";
 
+@import "blocks/arrow-down";
+@import "blocks/burger-btn";
 @import "blocks/card";
+@import "blocks/heading";
+@import "blocks/menu";
+@import "blocks/my-photo";
+@import "blocks/navigation";
+@import "blocks/social-icons";
 
 @import "sections/contacts";
 @import "sections/cv";

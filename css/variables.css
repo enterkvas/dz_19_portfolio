@@ -1,0 +1,13 @@
+:root {
+   --default-fz14: 14px;
+   --default-fz16: 16px;
+   --default-fz32: 32px;
+   --default-text-white: #fff;
+   --default-text-blue-dark: #0052c2;
+   --default-text-black-near: #010101;
+   --default-hover-orange: #ffe400;
+   --default-bg-menu: #1D6DAC;
+   --default-bg-menu-mobile: #15598D;
+
+   --swiper-pagination-bullet-horizontal-gap: 9px;
+}   
