@@ -32,7 +32,17 @@ body {
   font-family: "Noto Sans";
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+p {
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: var(--default-fz14);
+  line-height: 1.8571428571;
+  font-weight: 400;
+}
+
+body, h1, h2, h3, h4, h5, h6, ul, ol, li {
   padding: 0;
   margin: 0;
   border: 0;
@@ -235,7 +245,7 @@ a.mouse_scroll:active, a.mouse_scroll:focus {
   width: 33px;
   height: 28px;
   margin-right: 15px;
-  place-self: end;
+  top: 35px;
   right: 0;
   z-index: 1;
 }
@@ -284,6 +294,18 @@ a.mouse_scroll:active, a.mouse_scroll:focus {
     font-size: 0;
   }
 }
+.heading {
+  font-family: "Noto Sans";
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #0052c2;
+}
+
+.heading-white {
+  color: var(--default-text-white);
+}
+
 .menu {
   position: absolute;
   left: -150%;
@@ -295,7 +317,7 @@ a.mouse_scroll:active, a.mouse_scroll:focus {
   transition: all 0.5s ease 0s;
 }
 .menu._active {
-  top: -30px;
+  top: 0px;
   left: 0;
   height: 100vh;
   transition: all 0.5s ease 0s;
@@ -320,20 +342,16 @@ a.mouse_scroll:active, a.mouse_scroll:focus {
     position: static;
   }
 }
-.my-photo {
+.user-photo {
+  height: 110px;
+  width: 110px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
   margin-top: 20px;
   overflow: hidden;
-  width: 110px;
-  height: 110px;
   border-radius: 80px;
   box-shadow: 0px 0px 40px 0px #48779f;
-}
-
-.navigation {
-  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -344,10 +362,6 @@ a.mouse_scroll:active, a.mouse_scroll:focus {
 .contacts {
   font-family: icons;
   background-color: rgb(6, 90, 152);
-}
-
-.resume {
-  background-color: #0052c2;
 }
 
 .header {
@@ -374,4 +388,8 @@ a.mouse_scroll:active, a.mouse_scroll:focus {
 }
 .header__subtitle {
   font-size: 16px;
+}
+
+.my__works {
+  background-color: green;
 }

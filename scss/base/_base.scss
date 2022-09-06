@@ -11,3 +11,15 @@ body {
 body {
    font-family: 'Noto Sans';
 }
+
+p {
+   margin-bottom: 10px;
+}
+
+.text {
+   // font-size: 1em;
+   font-size: var(--default-fz14);
+   // line-height: 28px;
+   line-height: calc(26 / 14);
+   font-weight: 400;
+}
