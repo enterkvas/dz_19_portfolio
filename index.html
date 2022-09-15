@@ -26,13 +26,15 @@
             <li class="menu__item"><a href="#">contacts</a></li>
           </ul>
         </nav>
-        <div class="user-photo user-photo--shadow">
-          <img src="img/images/images-myPhoto/myPhoto_1.jpg" alt="My photo">
+        <div class="header__photo">
+          <div class="user-photo user-photo--shadow">
+            <img src="img/images/images-myPhoto/myPhoto_1.jpg" alt="My photo">
+          </div>
         </div>
-        <div class="header__text">
+        <hgroup class="header__text">
           <h1 class="header__title">Aleksandr Bugakov</h1>
           <h2 class="header__subtitle">HTML Site Developer</h2>
-        </div>
+        </hgroup>
         <a href="#resume" class="mouse_scroll">
           <div class="mouse">
             <div class="wheel"></div>
@@ -47,77 +49,66 @@
     </header>
 
     <main class="main">
-      <section class="resume resume__container _container">
-        <div class="user-photo user-photo--big">
-          <img src="img/images/images-myPhoto/myPhoto_1.jpg" alt="">
-        </div>
-        <div class="resume__text">
-          <h2 class="resume__title heading">Resume</h2>
-          <p>Alexander Bugakov</p>
-          <p>55 years, Buenos Aires, Argentina</p>
-          <p class="text">I managed to be born in Rashka. I graduated from 10 classes of high school. I graduated
-            from the Polytechnic Institute. I served 2 years in the Soviet Army.</p>
-          <div class="resume__row">
-            <!-- col-1 -->
-            <div class="resume__col">
-              <div class="resume__item">
-                <div class="resume__experience">
-                  <h3>Work experience</h3>
-                  <div class="resume__couple">
-                    <div class="resume__date">декабрь - настоящее время</div>
-                    <p class="text">Layback Ruster in the web studio "Web Start"</p>
-                  </div>
-                  <div class="resume__couple">
-                    <div class="resume__date">декабрь - настоящее время</div>
-                    <p class="text">Layback Ruster in the web studio "Web Start"</p>
-                  </div>
-                  <div class="resume__couple">
-                    <div class="resume__date">декабрь - настоящее время</div>
-                    <p class="text">Layback Ruster in the web studio "Web Start"</p>
-                  </div>
-                  <div class="resume__couple">
-                    <div class="resume__date">декабрь - настоящее время</div>
-                    <p class="text">Layback Ruster in the web studio "Web Start"</p>
-                  </div>
-                  <div class="resume__couple">
-                    <div class="resume__date">декабрь - настоящее время</div>
-                    <p class="text">Layback Ruster in the web studio "Web Start"</p>
-                  </div>
-                </div>
-              </div>
-              <!-- col-2 -->
-              <div class="resume__col">
-                <div class="resume__item">
-                  <div class="resume__experience">
-                    <h3>Education</h3>
-                    <div class="resume__couple">
-                      <div class="resume__date">декабрь - настоящее время</div>
-                      <p class="text">Layback Ruster in the web studio "Web Start"</p>
-                    </div>
-                    <div class="resume__couple">
-                      <div class="resume__date">декабрь - настоящее время</div>
-                      <p class="text">Layback Ruster in the web studio "Web Start"</p>
-                    </div>
-                    <div class="resume__couple">
-                      <div class="resume__date">декабрь - настоящее время</div>
-                      <p class="text">Layback Ruster in the web studio "Web Start"</p>
-                    </div>
-                    <div class="resume__couple">
-                      <div class="resume__date">декабрь - настоящее время</div>
-                      <p class="text">Layback Ruster in the web studio "Web Start"</p>
-                    </div>
-                    <div class="resume__couple">
-                      <div class="resume__date">декабрь - настоящее время</div>
-                      <p class="text">Layback Ruster in the web studio "Web Start"</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <section class="resume">
+        <div class="resume__container _container">
+          <div class="resume__photo">
+            <div class="user-photo user-photo--big">
+              <img src="img/images/images-myPhoto/myPhoto_1.jpg" alt="">
             </div>
           </div>
-          <!-- <i class="fa fa-download"></i> -->
-          <button><i class="fa fa-download"></i>Download resume</button>
-          </p>
+          
+          <div class="resume__about">
+            <h2 class="resume__title heading">Resume</h2>
+            <p class="resume__name"><strong>Alexander Bugakov</strong></p>
+            <p class="text">55 years, Buenos Aires, Argentina</p>
+            <p class="text resume__descr">I managed to be born in Rashka. I graduated from 10 classes of high school. I
+              graduated
+              from the Polytechnic Institute. I served 2 years in the Soviet Army.</p>
+          </div>
+          <div class="resume__row">            
+            <div class="resume__col">              
+              <div class="heading--medium">Work experience</div>
+              <ul class="definition-list">
+                <li class="definition-list__item">
+                  <div class="definition-list__def">December - present</div>
+                  <div class="definition-list__descr"><p class="text">Layback Ruster in the web studio "Web Start"</p></div>
+                </li>
+                <li class="definition-list__item">
+                  <div class="definition-list__def">October 2015 - December 2015</div>
+                  <div class="definition-list__descr"><p class="text">Freenser, web designer.</p></div>
+                </li>
+                <li class="definition-list__item">
+                  <div class="definition-list__def">St. 2014 - October 2015</div>
+                  <div class="definition-list__descr"><p class="text">"LLC Cyber Soft" is a system administrator.</p></div>
+                </li>
+              </ul>             
+            </div>
+            
+            <div class="resume__col">              
+              <div class="heading--medium">Education</div>
+              <ul class="definition-list">
+                <li class="definition-list__item">
+                  <div class="definition-list__def">1983 - 1990 Novocherkassk Polytechnic Institute</div>
+                  <div class="definition-list__descr"><p>CHIMIC-technologist</p></div>
+                </li>
+                <li class="definition-list__item">
+                  <div class="definition-list__def">October 2015 - December 2015</div>
+                  <div class="definition-list__descr"><p>Freenser, web designer.</p></div>
+                </li>
+                <li class="definition-list__item">
+                  <div class="definition-list__def">St. 2014 - October 2015</div>
+                  <div class="definition-list__descr"><p>"LLC Cyber Soft" is a system administrator.</p></div>
+                </li>
+              </ul>              
+            </div>
+          </div>
+          
+          <div class="resume__button">
+            <a class="button">
+             <i class="fa fa-download"></i>Download resume
+            </a>
+          </div>
+        </div>
       </section>
       <section class="works">
         <h2 class="works__title h2-blue">My works</h2>

@@ -22,14 +22,16 @@
 	font-style: normal;
 }
 
-@import "base/base";
 @import "base/null_styles";
+@import "base/base";
 @import "base/layout";
 // @import "base/variables";
 
 @import "blocks/arrow-down";
 @import "blocks/burger-btn";
+@import "blocks/button";
 @import "blocks/card";
+@import "blocks/definition-list";
 @import "blocks/heading";
 @import "blocks/menu";
 @import "blocks/user-photo";
