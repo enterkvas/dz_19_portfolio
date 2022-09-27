@@ -1,0 +1,17 @@
+.card {
+  &__img {margin-bottom: 20px;}
+
+  &__title {margin-bottom: 12px;}
+
+  &__title a {    
+    font-family: 'Noto Sans', serif, sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  &__descr {
+    line-height: calc(20 / 14);
+  }
+}

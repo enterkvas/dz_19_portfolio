@@ -1,8 +1,7 @@
 .resume {
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   color: var(--default-text-black-near);
-  border-bottom: 1px solid var(--default-border-bottom-sections);
   
   &__container {}
 
@@ -31,18 +30,23 @@
 
   &__name {
     margin-top: 20px;
-    margin-bottom: 3px;
+    margin-bottom: 10px;
     font-size: 18px;
-    line-height: 1;
-    // font-weight: 700;
-    // color: #010101;
+    font-weight: 700;
+    line-height: 1;    
   }
+
+  &__row {margin-bottom: 20px;}
 
   &__col {margin-bottom: 35px;}
 
-  &__descr {margin-bottom: 30px;}  
+  &__col:last-child {margin-bottom: 0;}
 
-  &__item {}  
+  &__descr {
+    margin-bottom: 40px;
+    font-weight: 500;
+    line-height: calc(22 / 14);
+  } 
   
 // Grid grid for tablets and desktops
   @media(min-width: 768px) {    
