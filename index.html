@@ -9,14 +9,15 @@
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" type="text/css" href="css/iconsfont.css">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="img/favicons/favicon-48x48.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
+  <link rel="stylesheet" type="text/css" href="css/fit-grid.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicons/favicon-48x48.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
 </head>
 
 <body>
   <div class="wrapper">
-    <header class="header">
+    <header class="header hidden">
       <div class="header__container _container">
         <nav class="navigation">
           <div class="burger-btn"><span></span></div>
@@ -49,7 +50,7 @@
     </header>
 
     <main class="main">
-      <section class="resume">
+      <section class="resume hidden">
         <div class="resume__container _container">
           <div class="resume__photo">
             <div class="user-photo user-photo--big">
@@ -60,29 +61,29 @@
             <h2 class="resume__title heading">Resume</h2>
             <p class="resume__name">Alexander Bugakov</p>
             <p>55 years, Buenos Aires, Argentina</p>
-            <p class="resume__descr">I managed to be born in Rashka. I graduated from 10 classes of high school. I
+            <p class="resume__description">I managed to be born in Rashka. I graduated from 10 classes of high school. I
               graduated
               from the Polytechnic Institute. I served 2 years in the Soviet Army.</p>
           </div>
           <div class="resume__row">
             <div class="resume__col">
               <div class="heading--medium">Work experience</div>
-              <ul class="definition-list">
+              <ul class="resume__list definition-list">
                 <li class="definition-list__item">
-                  <div class="definition-list__period">December - present</div>
-                  <div class="definition-list__descr">
+                  <div class="definition-list__def">December - present</div>
+                  <div class="definition-list__description">
                     <p>Layback Ruster in the web studio "Web Start"</p>
                   </div>
                 </li>
                 <li class="definition-list__item">
-                  <div class="definition-list__period">October 2015 - December 2015</div>
-                  <div class="definition-list__descr">
+                  <div class="definition-list__def">October 2015 - December 2015</div>
+                  <div class="definition-list__description">
                     <p>Freenser, web designer.</p>
                   </div>
                 </li>
                 <li class="definition-list__item">
-                  <div class="definition-list__period">St. 2014 - October 2015</div>
-                  <div class="definition-list__descr">
+                  <div class="definition-list__def">St. 2014 - October 2015</div>
+                  <div class="definition-list__description">
                     <p>"LLC Cyber Soft" is a system administrator.</p>
                   </div>
                 </li>
@@ -91,22 +92,22 @@
 
             <div class="resume__col">
               <div class="heading--medium">Education</div>
-              <ul class="definition-list">
+              <ul class="resume__list definition-list">
                 <li class="definition-list__item">
-                  <div class="definition-list__period">1983 - 1990</div>
-                  <div class="definition-list__descr">
+                  <div class="definition-list__def">1983 - 1990</div>
+                  <div class="definition-list__description">
                     <p> Novocherkassk Polytechnic Institute CHIMIC-technologist</p>
                   </div>
                 </li>
                 <li class="definition-list__item">
-                  <div class="definition-list__period">October 2015 - December 2015</div>
-                  <div class="definition-list__descr">
+                  <div class="definition-list__def">October 2015 - December 2015</div>
+                  <div class="definition-list__description">
                     <p>Freenser, web designer.</p>
                   </div>
                 </li>
                 <li class="definition-list__item">
-                  <div class="definition-list__period">St. 2014 - October 2015</div>
-                  <div class="definition-list__descr">
+                  <div class="definition-list__def">St. 2014 - October 2015</div>
+                  <div class="definition-list__description">
                     <p>"LLC Cyber Soft" is a system administrator.</p>
                   </div>
                 </li>
@@ -121,7 +122,7 @@
           </div>
         </div>
       </section>
-      <section class="works">
+      <section class="works hidden">
         <div class="works__container _container">
           <h2 class="works__title heading">My works</h2>
           <ul class="works__categories">
@@ -140,7 +141,7 @@
                 <div class="card__title">
                   <a href="#">Organica training model</a>
                 </div>
-                <div class="card__descr">
+                <div class="card__description">
                   <p>Layout of a single -page site on the PSD layout.</p>
                 </div>
               </div>
@@ -153,7 +154,7 @@
                 <div class="card__title">
                   <a href="#">Organica training model</a>
                 </div>
-                <div class="card__descr">
+                <div class="card__description">
                   <p>Layout of a single -page site on the PSD layout.</p>
                 </div>
               </div>
@@ -166,7 +167,7 @@
                 <div class="card__title">
                   <a href="#">Organica training model</a>
                 </div>
-                <div class="card__descr">
+                <div class="card__description">
                   <p>Layout of a single -page site on the PSD layout.</p>
                 </div>
               </div>
@@ -179,7 +180,7 @@
                 <div class="card__title">
                   <a href="#">Organica training model</a>
                 </div>
-                <div class="card__descr">
+                <div class="card__description">
                   <p>Layout of a single -page site on the PSD layout.</p>
                 </div>
               </div>
@@ -192,7 +193,7 @@
                 <div class="card__title">
                   <a href="#">Organica training model</a>
                 </div>
-                <div class="card__descr">
+                <div class="card__description">
                   <p>Layout of a single -page site on the PSD layout.</p>
                 </div>
               </div>
@@ -205,7 +206,7 @@
                 <div class="card__title">
                   <a href="#">Organica training model</a>
                 </div>
-                <div class="card__descr">
+                <div class="card__description">
                   <p>Layout of a single -page site on the PSD layout.</p>
                 </div>
               </div>
@@ -214,19 +215,62 @@
         </div>
       </section>
       <section class="contacts">
-        <h2 class="h2-white">Contacts</h2>
-        <div class="social-icons">
-          <a href="#" class="_icon-twitter"></a>
-          <a href="#" class="_icon-youtube"></a>
-          <a href="#" class="_icon-linkedin"></a>
-          <a href="#" class="_icon-facebook"></a>
-          <a href="#" class="_icon-github"></a>
+        <div class="contacts__container _container">
+          <div class="contacts__row">
+            <div class="contacts__col">
+              <div class="contacts__text">
+                <h2 class="contacts__title heading heading--white">Contacts</h2>
+                <p class="contacts__description">If you are looking for a website layout, the developer’s Front-End in the team or to work on the project, I am at your service.</p>
+                <ul class="contacts__list definition-list">
+                  <li class="definition-list__item">
+                    <div class="definition-list__def definition-list__def--light definition-list__def--bigger">email</div>
+                    <div class="definition-list__description"><p><a href="mailto:alexanderbugakov66@gmail.com">alexanderbugakov66@gmail.com</a></p></div>
+                  </li>
+                  <li class="definition-list__item">
+                    <div class="definition-list__def definition-list__def--light definition-list__def--bigger">skype</div>
+                    <div class="definition-list__description"><p><a href="skype:enterkvas">enterkvas</a></p></div>
+                  </li>
+                  <li class="definition-list__item">
+                    <div class="definition-list__def definition-list__def--light definition-list__def--bigger">tel</div>
+                    <div class="definition-list__description"><p><a href="tel:+541176401593">+541176401593</a></p></div>
+                  </li>
+                  <li class="definition-list__item">
+                    <div class="definition-list__def definition-list__def--light definition-list__def--bigger">address</div>
+                    <div class="definition-list__description"><p>Argentina, Buenos Aires</p></div>
+                  </li>
+                  <li class="definition-list__item">
+                    <div class="definition-list__def definition-list__def--light definition-list__def--bigger">social networks</div>
+                    <div class="definition-list__description">
+                      <div class="social-icons">
+                        <a href="#" class="_icon-twitter"></a>
+                        <a href="#" class="_icon-youtube"></a>
+                        <a href="#" class="_icon-linkedin"></a>
+                        <a href="#" class="_icon-facebook"></a>
+                        <a href="#" class="_icon-github"></a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>               
+              </div>
+            </div>
+            <div class="contacts__col">              
+              <div class="heading--medium heading--white">Contact with me</div>                
+              <form class="contacts__form form-contacts fit-grid" action="#">
+                <input type="text" class="form-contacts__input form-contacts__name" name="name" placeholder="Name">
+                <input type="email" class="form-contacts__input form-contacts__email" name="email" placeholder="Email">
+                <input type="text" class="form-contacts__input form-contacts__skype" name="skype" placeholder="Skype">
+                <input type="tel" class="form-contacts__input form-contacts__tel" name="tel" placeholder="phonenumber">
+                <textarea class="form-contacts__textarea" name="big-pencil" id="#" cols="30" rows="10" placeholder="Your message"></textarea>
+                <input type="submit" class="form-contacts__input form-contacts__submit" value="Submit"></input>
+              </form>              
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="footer__container">
+    <footer class="footer hidden">
+      <div class="footer__container _container">
         <div class="footer__content">
           <p class="footer__copyright">© 2016 Емельян Казаков Веб-разработик из Москвы, занимаюсь версткой и
             созданием сайтов.</p>

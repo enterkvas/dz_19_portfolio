@@ -1,8 +1,6 @@
 .works {
   padding: 35px 0px 47px;
-  border-top: 1px solid var(--default-border-bottom-sections);
-
-  &__container {}
+  border-top: 1px solid var(--default-border-bottom-sections); 
 
   &__title {
     margin-bottom: 33px;
@@ -35,13 +33,9 @@
     padding: 10px 20px;    
     color: #010101;
     border: 2px solid var(--default-text-blue-dark);
-  }
-
-  &__row {}
+  }  
 
   &__col {margin-bottom: 40px;}
 
-  &__col:last-child {margin-bottom: 0;}
-
-  &__item {}
+  &__col:last-child {margin-bottom: 0;}  
 }

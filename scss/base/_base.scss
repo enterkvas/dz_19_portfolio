@@ -10,3 +10,9 @@ body {
 body {
   font-family: 'Noto Sans', serif, sans-serif;
 }
+
+.grid > * {
+  min-width: 0;
+}
+
+.hidden {display: none;}

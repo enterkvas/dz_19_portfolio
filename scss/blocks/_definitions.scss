@@ -1,0 +1,43 @@
+.definition-list {
+
+  a {
+    display: inline-block;
+    color: var(--default-text-white);
+    border-bottom: 1px dotted var(--default-text-white);
+  }
+  
+  &__item {
+    margin-bottom: 17px;
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;    
+  }
+
+  &__def {    
+    font-size: 14px;
+    font-weight: 700;
+    line-height: calc(26 / 14);
+    text-transform: uppercase;
+    color: #0052c2;
+
+    &--light {
+      color: var(--default-text-blue-light);
+    }
+
+    &--bigger {
+      font-size: 16px;
+      line-height: calc(32 / 16);
+    }
+  }
+
+  &__description {line-height: calc(22 / 14);}
+}
+
+@media(min-width:992px) {
+  a:hover {
+    color: var(--default-hover-orange);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--default-hover-orange);
+  }
+}

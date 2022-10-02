@@ -3,17 +3,17 @@
   font-size: 32px;
   line-height: 1;
   font-weight: 700;
-  color: var(--default-text-blue-dark);
-
-  &--white {
-    color: var(--default-text-white);
-  }
+  color: var(--default-text-blue-dark);  
 
   &--medium {  
     font-size: 24px;
     line-height: 1;
     font-weight: 700;
-    color: #010101;
+    color: #010101;    
+  }
+  
+  &--white {
+    color: var(--default-text-white);
   }
 }
 

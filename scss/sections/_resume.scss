@@ -42,11 +42,12 @@
 
   &__col:last-child {margin-bottom: 0;}
 
-  &__descr {
-    margin-bottom: 40px;
-    font-weight: 500;
+  &__description {
+    margin-bottom: 40px;    
     line-height: calc(22 / 14);
-  } 
+  }
+  
+  &__list {margin-top: 15px;}
   
 // Grid grid for tablets and desktops
   @media(min-width: 768px) {    

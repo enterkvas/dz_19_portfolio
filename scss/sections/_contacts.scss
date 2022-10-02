@@ -1,4 +1,14 @@
 .contacts {
-   font-family: icons;
-   background-color: rgb(6,90,152);
+  padding: 60px 0 50px;
+  background-color: #065A97;
+  color: var(--default-text-white);  
+  &__col {margin-bottom: 35px;}
+  &__col:last-child {margin-bottom: 35px;}
+  &__col:last-child {margin-bottom: 0;}  
+  &__description {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: calc(22 / 14);
+  }  
+  &__form {margin-top: 20px;}
 }
