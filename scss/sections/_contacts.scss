@@ -1,7 +1,8 @@
 .contacts {
   padding: 60px 0 50px;
-  background-color: #065A97;
-  color: var(--default-text-white);  
+  background-color: var(--default-bg-contacts);
+  color: var(--default-text-white);
+    
   &__col {margin-bottom: 35px;}
   &__col:last-child {margin-bottom: 35px;}
   &__col:last-child {margin-bottom: 0;}  

@@ -606,7 +606,7 @@ a.mouse_scroll:active, a.mouse_scroll:focus {
 
 .contacts {
   padding: 60px 0 50px;
-  background-color: #065A97;
+  background-color: var(--default-bg-contacts);
   color: var(--default-text-white);
 }
 .contacts__col {
@@ -695,6 +695,24 @@ a.mouse_scroll:active, a.mouse_scroll:focus {
     grid-row: 3/4;
     background-color: gray;
   }
+}
+
+.footer {
+  padding: 40px 0;
+  background-color: var(--default-bg-footer);
+}
+.footer__copyright {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #82b3d7;
+}
+.footer__description {
+  line-height: 1.5714285714;
+  color: #5e92b9;
+}
+.footer__description a {
+  color: #5e92b9;
+  border-bottom: 1px solid #5e92b9;
 }
 
 .header {
