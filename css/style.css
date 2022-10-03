@@ -698,7 +698,7 @@ a.mouse_scroll:active, a.mouse_scroll:focus {
 }
 
 .footer {
-  padding: 40px 0;
+  padding: 40px 0 50px;
   background-color: var(--default-bg-footer);
 }
 .footer__copyright {
