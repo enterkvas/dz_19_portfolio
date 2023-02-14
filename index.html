@@ -17,14 +17,17 @@
 
 <body>
   <div class="wrapper">
-    <header class="header hidden">
+    <!-- <a id="servicios"></a>
+    <a id="galeria"></a>
+    <a id="contacto"></a> -->
+    <header class="header">
       <div class="header__container _container">
         <nav class="navigation">
           <div class="burger-btn"><span></span></div>
-          <ul class="navigation__list menu">
-            <li class="menu__item"><a href="#">resume</a></li>
-            <li class="menu__item"><a href="#">portfolio</a></li>
-            <li class="menu__item"><a href="#">contacts</a></li>
+          <ul class="navigation__list menu-list">
+            <li class="menu-list__item"><a href="#resume" class="menu__link">resume</a></li>
+            <li class="menu-list__item"><a href="#portfolio" class="menu__link">portfolio</a></li>
+            <li class="menu-list__item"><a href="#contacts" class="menu__link">contacts</a></li>
           </ul>
         </nav>
         <div class="header__photo">
@@ -34,7 +37,7 @@
         </div>
         <hgroup class="header__text">
           <h1 class="header__title">Aleksandr Bugakov</h1>
-          <h2 class="header__subtitle">HTML Site Developer</h2>
+          <p class="header__subtitle">HTML Site Developer</p>
         </hgroup>
         <a href="#resume" class="mouse_scroll">
           <div class="mouse">
@@ -50,7 +53,7 @@
     </header>
 
     <main class="main">
-      <section class="resume hidden">
+      <section class="resume" id="resume">
         <div class="resume__container _container">
           <div class="resume__photo">
             <div class="user-photo user-photo--big">
@@ -122,7 +125,7 @@
           </div>
         </div>
       </section>
-      <section class="works hidden">
+      <section class="works" id="portfolio">
         <div class="works__container _container">
           <h2 class="works__title heading">My works</h2>
           <ul class="works__categories">
@@ -214,7 +217,7 @@
           </div>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="contacts__container _container">
           <div class="contacts__row">
             <div class="contacts__col">

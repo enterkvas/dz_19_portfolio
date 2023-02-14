@@ -22,24 +22,24 @@
 	font-style: normal;
 }
 
-@import "base/null_styles";
-@import "base/base";
-@import "base/layout";
+@import "base/_null_styles";
+@import "base/_base";
+@import "base/_layout";
 
-@import "blocks/arrow-down";
-@import "blocks/burger-btn";
-@import "blocks/button";
-@import "blocks/card";
-@import "blocks/definitions";
-@import "blocks/heading";
-@import "blocks/menu";
-@import "blocks/user-photo";
-@import "blocks/navigation";
-@import "blocks/social-icons";
-@import "blocks/form-contacts";
+@import "blocks/_arrow-down";
+@import "blocks/_burger-btn";
+@import "blocks/_button";
+@import "blocks/_card";
+@import "blocks/_definitions";
+@import "blocks/_heading";
+@import "blocks/_menu";
+@import "blocks/_user-photo";
+@import "blocks/_navigation";
+@import "blocks/_social-icons";
+@import "blocks/_form-contacts";
 
-@import "sections/contacts";
-@import "sections/resume";
-@import "sections/footer";
-@import "sections/header";
-@import "sections/works";
+@import "sections/_contacts";
+@import "sections/_resume";
+@import "sections/_footer";
+@import "sections/_header";
+@import "sections/_works";

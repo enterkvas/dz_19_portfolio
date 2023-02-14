@@ -123,7 +123,6 @@ body {
 
 .wrapper {
   min-height: 100%;
-  overflow: hidden;
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
@@ -388,6 +387,60 @@ a.mouse_scroll:active, a.mouse_scroll:focus {
   margin-right: 7px;
 }
 
+/* Button "Up": */
+.btn_up {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  z-index: 100;
+  outline: 0 !important;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+@media (min-width: 992px) {
+  .btn_up:hover {
+    cursor: pointer;
+  }
+}
+.btn_up::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: -5px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.btn_up::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.btn_up.active {
+  display: block;
+}
+
 .card__img {
   margin-bottom: 20px;
 }
@@ -458,7 +511,7 @@ a.mouse_scroll:active, a.mouse_scroll:focus {
   color: var(--default-text-white);
 }
 
-.menu {
+.menu-list {
   position: absolute;
   left: -150%;
   background-color: rgba(6, 33, 55, 0.9);
@@ -468,16 +521,16 @@ a.mouse_scroll:active, a.mouse_scroll:focus {
   top: 30px;
   transition: all 0.5s ease 0s;
 }
-.menu._active {
+.menu-list._active {
   top: 0px;
   left: 0;
   height: 100vh;
   transition: all 0.5s ease 0s;
 }
-.menu li {
+.menu-list li {
   margin-bottom: 50px;
 }
-.menu__item a {
+.menu-list__item a {
   color: var(--default-text-white);
   text-decoration: none;
   text-transform: uppercase;
@@ -485,7 +538,7 @@ a.mouse_scroll:active, a.mouse_scroll:focus {
   font-weight: 700;
   letter-spacing: 3px;
 }
-.menu__item a:active {
+.menu-list__item a:active {
   color: var(--default-hover-orange);
 }
 
