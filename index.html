@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>dz19Portfolio</title>
-  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" type="text/css" href="css/variables.css">
   <link rel="stylesheet" type="text/css" href="css/iconsfont.css">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
   <link rel="stylesheet" type="text/css" href="css/fit-grid.css">
@@ -25,9 +25,9 @@
         <nav class="navigation">
           <div class="burger-btn"><span></span></div>
           <ul class="navigation__list menu-list">
-            <li class="menu-list__item"><a href="#resume" class="menu__link">resume</a></li>
-            <li class="menu-list__item"><a href="#portfolio" class="menu__link">portfolio</a></li>
-            <li class="menu-list__item"><a href="#contacts" class="menu__link">contacts</a></li>
+            <li class="menu-list__item"><a data-goto="#resume" href="#" class="menu__link">resume</a></li>
+            <li class="menu-list__item"><a data-goto="#portfolio" href="#" class="menu__link">portfolio</a></li>
+            <li class="menu-list__item"><a data-goto="#contacts" href="#" class="menu__link">contacts</a></li>
           </ul>
         </nav>
         <div class="header__photo">
@@ -39,35 +39,34 @@
           <h1 class="header__title">Aleksandr Bugakov</h1>
           <p class="header__subtitle">HTML Site Developer</p>
         </hgroup>
-        <a href="#resume" class="mouse_scroll">
+        <a href="#" data-mouse="#resume" class="mouse__scroll">
           <div class="mouse">
             <div class="wheel"></div>
           </div>
           <div>
-            <span class="m_scroll_arrows unu"></span>
-            <span class="m_scroll_arrows doi"></span>
-            <span class="m_scroll_arrows trei"></span>
+            <span class="m__scroll-arrows unu"></span>
+            <span class="m__scroll-arrows doi"></span>
+            <span class="m__scroll-arrows trei"></span>
           </div>
         </a>
       </div>
     </header>
 
     <main class="main">
-      <section class="resume" id="resume">
-        <div class="resume__container _container">
+      <section class="resume">
+        <div class="resume__container _container" id="resume">
           <div class="resume__photo">
             <div class="user-photo user-photo--big">
-              <img src="img/images/images-myPhoto/myPhoto_1.jpg" alt="">
+              <img src="img/images/images-myPhoto/myPhoto_1.jpg" alt="My photo">
             </div>
           </div>
-          <div class="resume__about">
+          <hgroup class="resume__about">
             <h2 class="resume__title heading">Resume</h2>
-            <p class="resume__name">Alexander Bugakov</p>
-            <p>55 years, Buenos Aires, Argentina</p>
-            <p class="resume__description">I managed to be born in Rashka. I graduated from 10 classes of high school. I
+            <p class="resume__name">Alexander Bugakov</p>            
+            <p class="resume__description">55 years, Buenos Aires, Argentina <br> I managed to be born in Rashka. I graduated from 10 classes of high school. I
               graduated
               from the Polytechnic Institute. I served 2 years in the Soviet Army.</p>
-          </div>
+          </hgroup>
           <div class="resume__row">
             <div class="resume__col">
               <div class="heading--medium">Work experience</div>
@@ -128,89 +127,89 @@
       <section class="works" id="portfolio">
         <div class="works__container _container">
           <h2 class="works__title heading">My works</h2>
-          <ul class="works__categories">
-            <li><a href="#">all</a></li>
-            <li><a href="#">HTML+CSS</a></li>
-            <li><a href="#">bootstrap</a></li>
-            <li><a href="#">educational</a></li>
-            <li><a href="#">to order</a></li>
+          <ul class="works__categories categories">
+            <li data-f="all" class="categories__all">all</li>
+            <li data-f="design" class="categories__design">HTML+CSS</li>
+            <li data-f="bootstrap" class="categories__bootstrap">bootstrap</li>
+            <li data-f="educational" class="categories__educational">educational</li>
+            <li data-f="order" class="categories__order">to order</li>
           </ul>
           <div class="works__row">
-            <div class="works__col">
+            <div class="works__col educational bootstrap">
               <div class="works__item card">
                 <div class="card__img">
-                  <img src="img/images/images-portfolio/organica.jpg_4527.png" alt="Apollo picture">
+                  <img src="img/images/images-portfolio/apollo.png" alt="Apollo picture">
+                </div>
+                <div class="card__title">
+                  <a href="#">Training model Apollo</a>
+                </div>
+                <div class="card__description">
+                  <p>Layout Landing Hosting Company.Mobile adaptability.</p>
+                </div>
+              </div>
+            </div>
+            <div class="works__col educational design">
+              <div class="works__item card">
+                <div class="card__img">
+                  <img src="img/images/images-portfolio/organica.png" alt="Organica picture">
                 </div>
                 <div class="card__title">
                   <a href="#">Organica training model</a>
                 </div>
                 <div class="card__description">
-                  <p>Layout of a single -page site on the PSD layout.</p>
+                  <p>Layout of a single-page site on the PSD layout.</p>
                 </div>
               </div>
             </div>
             <div class="works__col">
               <div class="works__item card">
                 <div class="card__img">
-                  <img src="img/images/images-portfolio/organica.jpg_4527.png" alt="Apollo picture">
+                  <img src="img/images/images-portfolio/portfolio.png" alt="Portfolio picture">
                 </div>
                 <div class="card__title">
-                  <a href="#">Organica training model</a>
+                  <a href="#">Personal site Portfolio</a>
                 </div>
                 <div class="card__description">
-                  <p>Layout of a single -page site on the PSD layout.</p>
+                  <p>Layout of the personal site of the portfolio on which you are now.</p>
                 </div>
               </div>
             </div>
-            <div class="works__col">
+            <div class="works__col order">
               <div class="works__item card">
                 <div class="card__img">
-                  <img src="img/images/images-portfolio/organica.jpg_4527.png" alt="Apollo picture">
+                  <img src="img/images/images-portfolio/music.png" alt="Music picture">
                 </div>
                 <div class="card__title">
-                  <a href="#">Organica training model</a>
+                  <a href="#">Audio-techniques</a>
                 </div>
                 <div class="card__description">
-                  <p>Layout of a single -page site on the PSD layout.</p>
+                  <p>Layout pages for a vintage audio equipment store.</p>
                 </div>
               </div>
             </div>
-            <div class="works__col">
+            <div class="works__col order">
               <div class="works__item card">
                 <div class="card__img">
-                  <img src="img/images/images-portfolio/organica.jpg_4527.png" alt="Apollo picture">
+                  <img src="img/images/images-portfolio/motorcycle.png" alt="Motorcycle picture">
                 </div>
                 <div class="card__title">
-                  <a href="#">Organica training model</a>
+                  <a href="#">Motorcycle store</a>
                 </div>
                 <div class="card__description">
-                  <p>Layout of a single -page site on the PSD layout.</p>
+                  <p>Layout Landing for Indian Motorcycles.</p>
                 </div>
               </div>
             </div>
-            <div class="works__col">
+            <div class="works__col order">
               <div class="works__item card">
                 <div class="card__img">
-                  <img src="img/images/images-portfolio/organica.jpg_4527.png" alt="Apollo picture">
+                  <img src="img/images/images-portfolio/auto.png" alt="Auto picture">
                 </div>
                 <div class="card__title">
-                  <a href="#">Organica training model</a>
+                  <a href="#">Promo website of the car</a>
                 </div>
                 <div class="card__description">
-                  <p>Layout of a single -page site on the PSD layout.</p>
-                </div>
-              </div>
-            </div>
-            <div class="works__col">
-              <div class="works__item card">
-                <div class="card__img">
-                  <img src="img/images/images-portfolio/organica.jpg_4527.png" alt="Apollo picture">
-                </div>
-                <div class="card__title">
-                  <a href="#">Organica training model</a>
-                </div>
-                <div class="card__description">
-                  <p>Layout of a single -page site on the PSD layout.</p>
+                  <p>Layout of a single-page site on the PSD layout.</p>
                 </div>
               </div>
             </div>

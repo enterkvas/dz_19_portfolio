@@ -8,28 +8,23 @@
     text-align: center;
   }
 
-  &__categories {
+  .categories {
     margin-bottom: 30px;
     text-align: center;
   }
 
-  &__categories li {
+  .categories li {    
     margin-bottom: 33px;
     font-size: 16px;
     font-weight: 700;
     line-height: 1;
-  }
-
-  &__categories li:last-child {margin-bottom: 0;}
-
-  &__categories li a {
-    display: inline-block;
-    text-decoration: none;
     text-transform: uppercase;
     color: var(--default-color-categories);
   }
 
-  &__categories li a:hover {
+  .categories li:last-child {margin-bottom: 0;}  
+
+  .categories li:hover {
     padding: 10px 20px;    
     color: #010101;
     border: 2px solid var(--default-text-blue-dark);

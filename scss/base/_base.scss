@@ -20,3 +20,17 @@ body {
 }
 
 .hidden {display: none;}
+.hide {
+  animation-name: a1;
+  animation-duration: 2ms;
+}
+@keyframes a1 {
+  to {
+    opacity: 0;
+    min-height: 0;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  } 
+}
