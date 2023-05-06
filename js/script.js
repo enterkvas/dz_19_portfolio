@@ -73,15 +73,16 @@ function btn_up() {
 }
 setTimeout(btn_up, 2000);
 // === filter ===
-const filterRow = document.querySelectorAll('.works__col');
-document.querySelector('.works__categories').addEventListener('click', event => {
-  if(event.target.tagName !== 'LI') return false;
-  let filterClass = event.target.dataset['f'];
-  filterRow.forEach(elem => {
-    elem.classList.remove('hide');
-    if(!elem.classList.contains(filterClass) && filterClass !== 'all') {
-      elem.classList.add('hide');
-    }
-  });
-
-});
+// const filterRow = document.querySelectorAll('.card');
+// document.querySelector('.works__categories').addEventListener('click', event => {
+//   if(event.target.tagName !== 'LI') return false;
+//   let filterClass = event.target.dataset['f'];
+//   console.log(filterClass);
+//   filterRow.forEach( elem => {
+//     elem.classList.remove('hide');
+//     if(!elem.classList.contains(filterClass) && filterClass !== 'all') {
+//       elem.classList.add('hide');
+//     }
+//   });
+// });
+// MixItUp - фильтрация работ в портфолио

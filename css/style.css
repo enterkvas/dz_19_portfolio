@@ -122,8 +122,10 @@ body {
 }
 
 .hide {
+  opacity: 1;
   animation-name: a1;
-  animation-duration: 2ms;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes a1 {
@@ -478,6 +480,9 @@ a.mouse__scroll:active, a.mouse__scroll:focus {
   display: block;
 }
 
+.card {
+  display: inline-block;
+}
 .card__img {
   margin-bottom: 20px;
 }
@@ -875,4 +880,10 @@ a.mouse__scroll:active, a.mouse__scroll:focus {
 }
 .works__col:last-child {
   margin-bottom: 0;
+}
+.works #portfolio-projects .mix {
+  display: none;
+}
+.works .filter {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

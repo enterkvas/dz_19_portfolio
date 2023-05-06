@@ -21,8 +21,10 @@ body {
 
 .hidden {display: none;}
 .hide {
+  opacity: 1;
   animation-name: a1;
-  animation-duration: 2ms;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;  
 }
 @keyframes a1 {
   to {

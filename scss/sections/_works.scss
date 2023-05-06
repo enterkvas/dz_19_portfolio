@@ -32,5 +32,10 @@
 
   &__col {margin-bottom: 40px;}
 
-  &__col:last-child {margin-bottom: 0;}  
+  &__col:last-child {margin-bottom: 0;}
+  
+  #portfolio-projects .mix {
+    display: none;
+  }
+  .filter {cursor: pointer;}
 }
