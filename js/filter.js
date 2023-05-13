@@ -1,3 +1,3 @@
-$(document).ready(function() {
-  $('#portfolio-projects').mixItUp();
-});
+// $(document).ready(function() {
+//   $('#portfolio-projects').mixItUp();
+// });

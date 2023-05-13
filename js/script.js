@@ -72,7 +72,7 @@ function btn_up() {
   window.addEventListener('scroll', trackScroll);
 }
 setTimeout(btn_up, 2000);
-// === filter ===
+// === filter var_1 ===
 // const filterRow = document.querySelectorAll('.card');
 // document.querySelector('.works__categories').addEventListener('click', event => {
 //   if(event.target.tagName !== 'LI') return false;
@@ -86,3 +86,48 @@ setTimeout(btn_up, 2000);
 //   });
 // });
 // MixItUp - фильтрация работ в портфолио
+
+// === filter var_2 ===
+const categories = document.querySelector('#categories'),
+    cards = document.querySelectorAll('.card'),
+    filters = document.querySelectorAll('.filter')
+function filter() {
+  categories.addEventListener('click', event => {
+    const targetId = event.target.dataset.id,
+    target = event.target
+
+    if (target.classList.contains('filter')) {
+      filters.forEach(filter => filter.classList.remove('act')) 
+      target.classList.add('act')
+    }       
+
+    switch(targetId) {
+      case 'all':
+        getCards('card')
+        break
+      case 'design':
+        getCards(targetId)
+        break
+      case 'bootstrap':
+        getCards(targetId)
+        break
+      case 'educational':
+        getCards(targetId)
+        break
+      case 'order':
+        getCards(targetId)
+        break
+    }
+  })
+}
+filter()
+
+function getCards(className) {
+  cards.forEach(card => {
+    if (card.classList.contains(className)) {
+      card.style.display = 'block'
+    } else {
+      card.style.display = 'none'
+    }
+  })
+}
