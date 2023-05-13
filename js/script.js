@@ -105,18 +105,9 @@ function filter() {
       case 'all':
         getCards('card')
         break
-      case 'design':
+      case 'design':case 'bootstrap':case 'educational':case 'order':
         getCards(targetId)
-        break
-      case 'bootstrap':
-        getCards(targetId)
-        break
-      case 'educational':
-        getCards(targetId)
-        break
-      case 'order':
-        getCards(targetId)
-        break
+        break      
     }
   })
 }
