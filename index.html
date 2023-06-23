@@ -124,6 +124,7 @@
           </div>
         </div>
       </section>
+
       <section class="works" id="portfolio">
         <div class="works__container _container">
           <h2 class="works__title heading">My works</h2>
@@ -131,7 +132,6 @@
           <!-- <div class="filter" data-filter="all">All elements</div>
           <div class="filter" data-filter=".blue">Blue</div>
           <div class="filter" data-filter=".green">Green</div> -->
-
 
           <!-- <div id="testcontainer">
             <div class="mix blue">blue 1</div>
@@ -142,14 +142,15 @@
             <div class="mix green">green 3</div>
           </div> -->
 
-
-          <ul class="works__categories" id="categories">
-            <li data-id="all" class="filter act">all</li>
-            <li data-id="design" class="filter">HTML+CSS</li>
-            <li data-id="bootstrap" class="filter">bootstrap</li>
-            <li data-id="educational" class="filter">educational</li>
-            <li data-id="order" class="filter">to order</li>
-          </ul>
+          <div class="works-filter">
+            <ul class="works-filter__categories" id="categories">
+              <li class="works-filter__element"><span data-id="all" class="filter filter--active">All</span></li>
+              <li class="works-filter__element"><span data-id="design" class="filter">HTML+CSS</span></li>
+              <li class="works-filter__element"><span data-id="bootstrap" class="filter">bootstrap</span></li>
+              <li class="works-filter__element"><span data-id="educational" class="filter">educational</span></li>
+              <li class="works-filter__element"><span data-id="order" class="filter">to order</span></li>
+            </ul>
+          </div>
           <div class="works__row" id="portfolio-projects">
             <!-- <div class="works__col"> -->
               <div class="works__item card educational bootstrap">
@@ -178,7 +179,7 @@
               </div>
             <!-- </div> -->
             <!-- <div class="works__col"> -->
-              <div class="works__item card">
+              <div class="works__item card educational portfolio">
                 <div class="card__img">
                   <img src="img/images/images-portfolio/portfolio.png" alt="Portfolio picture">
                 </div>

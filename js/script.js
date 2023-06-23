@@ -72,7 +72,9 @@ function btn_up() {
   window.addEventListener('scroll', trackScroll);
 }
 setTimeout(btn_up, 2000);
-// === filter var_1 ===
+
+// ================ filter var_1 ================
+
 // const filterRow = document.querySelectorAll('.card');
 // document.querySelector('.works__categories').addEventListener('click', event => {
 //   if(event.target.tagName !== 'LI') return false;
@@ -87,38 +89,71 @@ setTimeout(btn_up, 2000);
 // });
 // MixItUp - фильтрация работ в портфолио
 
-// === filter var_2 ===
-const categories = document.querySelector('#categories'),
-    cards = document.querySelectorAll('.card'),
-    filters = document.querySelectorAll('.filter')
-function filter() {
-  categories.addEventListener('click', event => {
-    const targetId = event.target.dataset.id,
-    target = event.target
+// ================= filter var_2 ==================
 
-    if (target.classList.contains('filter')) {
-      filters.forEach(filter => filter.classList.remove('act')) 
-      target.classList.add('act')
-    }       
+// let categories = document.querySelector('#categories'),
+//     cards = document.querySelectorAll('.card'),
+//     filters = document.querySelectorAll('.filter')
+// function filter() {
+//   categories.addEventListener('click', event => {
+//     let targetId = event.target.dataset.id,
+//     targetMy = event.target
 
-    switch(targetId) {
-      case 'all':
-        getCards('card')
-        break
-      case 'design':case 'bootstrap':case 'educational':case 'order':
-        getCards(targetId)
-        break      
-    }
-  })
-}
-filter()
+//     if (targetMy.classList.contains('filter')) {
+//       filters.forEach(filter => filter.classList.remove('act')) 
+//       targetMy.classList.add('act')
+//     }  
+    
+//     if(!['design','bootstrap','education','order'].includes(targetId)) targetId = 'card'
+//     // console.log(targetId);
 
-function getCards(className) {
-  cards.forEach(card => {
-    if (card.classList.contains(className)) {
-      card.style.display = 'block'
+//     switch(targetId) {
+//       case 'all':
+//         getCards('card')
+//         break
+//       case 'design':case 'bootstrap':case 'educational':case 'order':
+//         getCards(targetId)
+//         break      
+//     }
+//   })
+// }
+// filter()
+
+// function getCards(className) {
+//   cards.forEach(card => {
+//     if (card.classList.contains(className)) {
+//       card.style.display = 'block'
+//     } else {
+//       card.style.display = 'none'
+//     }
+//   })
+// }
+
+// ================= filter var_4 ==================
+
+const list = document.querySelector('#categories'),
+  blocks = document.querySelectorAll('.card'),
+  filters = list.querySelectorAll('.filter');
+list.addEventListener('click', e => {
+  if(e.target.classList.contains('filter')) {
+    const filter = e.target.dataset.id;
+    if(filter === 'all') {
+      blocks.forEach(block => {
+        block.style.display = 'block';
+      }); 
     } else {
-      card.style.display = 'none'
-    }
-  })
-}
+        blocks.forEach(block => {
+          if(block.classList.contains(filter)) {
+            block.style.display = 'block';
+          } else {
+            block.style.display = 'none';
+          }
+        });
+      }      
+    
+    filters.forEach(filter => filter.classList.remove('filter--active'));
+    // li = li.classList.remove('act'));
+    e.target.classList.add('filter--active');
+  }
+});
+  
