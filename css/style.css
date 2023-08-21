@@ -168,9 +168,6 @@ a.mouse__scroll {
   bottom: 2rem;
   left: 50%;
   margin-left: -12px;
-  -webkit-animation-delay: 1.2s;
-  -moz-animation-delay: 1.2s;
-  -o-animation-delay: 1.2s;
   animation-delay: 1.2s;
   cursor: pointer;
   scroll-behavior: smooth;
@@ -189,9 +186,7 @@ a.mouse__scroll:active, a.mouse__scroll:focus {
   display: block;
   width: 5px;
   height: 5px;
-  -ms-transform: rotate(45deg);
   /* IE 9 */
-  -webkit-transform: rotate(45deg);
   /* Chrome, Safari, Opera */
   transform: rotate(45deg);
   border-right: 4px solid white;
@@ -208,33 +203,22 @@ a.mouse__scroll:active, a.mouse__scroll:focus {
 .unu,
 .doi,
 .trei {
-  -webkit-animation: mouse-scroll 1s infinite;
-  -moz-animation: mouse-scroll 1s infinite;
   animation: mouse-scroll 1s infinite;
 }
 
 .unu {
-  -webkit-animation-delay: 0.1s;
-  -moz-animation-delay: 0.1s;
   animation-delay: 0.1s;
-  -webkit-animation-direction: alternate;
   animation-direction: alternate;
 }
 
 .doi {
-  -webkit-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
   animation-delay: 0.2s;
-  -webkit-animation-direction: alternate;
   animation-direction: alternate;
   margin-top: -6px;
 }
 
 .trei {
-  -webkit-animation-delay: 0.3s;
-  -moz-animation-delay: 0.3s;
   animation-delay: 0.3s;
-  -webkit-animation-direction: alternate;
   animation-direction: alternate;
   margin-top: -6px;
 }
@@ -264,92 +248,20 @@ a.mouse__scroll:active, a.mouse__scroll:focus {
   height: 4px;
   width: 4px;
   border: 2px solid white;
-  -webkit-border-radius: 8px;
   border-radius: 8px;
 }
 
 .wheel {
-  -webkit-animation: mouse-wheel 0.6s linear infinite;
-  -moz-animation: mouse-wheel 0.6s linear infinite;
   animation: mouse-wheel 0.6s linear infinite;
-}
-
-@-webkit-keyframes mouse-wheel {
-  0% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(6px);
-    -ms-transform: translateY(6px);
-    transform: translateY(6px);
-  }
 }
 @keyframes mouse-wheel {
   0% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
     transform: translateY(0);
   }
   100% {
     opacity: 0;
-    -webkit-transform: translateY(6px);
-    -ms-transform: translateY(6px);
     transform: translateY(6px);
-  }
-}
-@-moz-keyframes mouse-wheel {
-  0% {
-    top: 1px;
-  }
-  25% {
-    top: 2px;
-  }
-  50% {
-    top: 3px;
-  }
-  75% {
-    top: 2px;
-  }
-  100% {
-    top: 1px;
-  }
-}
-@-webkit-keyframes mouse-scroll {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-moz-keyframes mouse-scroll {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-o-keyframes mouse-scroll {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
   }
 }
 @keyframes mouse-scroll {
@@ -701,6 +613,10 @@ a.mouse__scroll:active, a.mouse__scroll:focus {
   border-radius: 30px;
   letter-spacing: 1px;
 }
+.form-contacts__input::-moz-placeholder, .form-contacts__textarea::-moz-placeholder {
+  color: var(--default-text-input);
+  opacity: 0.5;
+}
 .form-contacts__input::placeholder, .form-contacts__textarea::placeholder {
   color: var(--default-text-input);
   opacity: 0.5;
@@ -734,12 +650,13 @@ a.mouse__scroll:active, a.mouse__scroll:focus {
   padding-bottom: 40px;
   color: var(--default-text-black-near);
 }
+.resume__about {
+  margin: 17px 0 30px;
+}
 .resume__name {
-  margin-top: 20px;
-  margin-bottom: 10px;
   font-size: 18px;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.5555555556;
 }
 .resume__row {
   margin-bottom: 20px;
@@ -838,7 +755,7 @@ a.mouse__scroll:active, a.mouse__scroll:focus {
 }
 .header__title {
   font-size: 26px;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 .header__subtitle {
   font-size: 18px;

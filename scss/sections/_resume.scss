@@ -1,9 +1,7 @@
 .resume {
   padding-top: 40px;
   padding-bottom: 40px;
-  color: var(--default-text-black-near);
-  
-  &__container {}
+  color: var(--default-text-black-near);  
 
   &__photo {
     // margin-left: auto;
@@ -24,18 +22,16 @@
     // left: -1000%;
     // background: transparent;
     // font-size: 0;
-  }
-  
-  &__title {}
+  }  
+
+  &__about {margin: 17px 0 30px;}
 
   &__name {
-    margin-top: 20px;
-    margin-bottom: 10px;
     font-size: 18px;
     font-weight: 700;
-    line-height: 1;    
+    line-height: calc(28 / 18);
   }
-
+  
   &__row {margin-bottom: 20px;}
 
   &__col {margin-bottom: 35px;}
