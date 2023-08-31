@@ -13,7 +13,8 @@ body {
 }
 
 .grid > * {
-  min-width: 0;
+  min-width: 0px;
+  margin: 0px auto;
 }
 
 .hidden {display: none;}

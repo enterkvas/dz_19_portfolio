@@ -114,7 +114,8 @@ body {
 }
 
 .grid > * {
-  min-width: 0;
+  min-width: 0px;
+  margin: 0px auto;
 }
 
 .hidden {
@@ -189,8 +190,8 @@ a.mouse__scroll:active, a.mouse__scroll:focus {
   /* IE 9 */
   /* Chrome, Safari, Opera */
   transform: rotate(45deg);
-  border-right: 4px solid white;
-  border-bottom: 4px solid white;
+  border-right: 4px solid #fff;
+  border-bottom: 4px solid #fff;
   margin: 0 0 3px 4px;
   width: 16px;
   height: 16px;
@@ -228,7 +229,7 @@ a.mouse__scroll:active, a.mouse__scroll:focus {
   width: 24px;
   border-radius: 14px;
   transform: none;
-  border: 2px solid white;
+  border: 2px solid #fff;
   top: 170px;
   display: none;
 }
@@ -243,11 +244,15 @@ a.mouse__scroll:active, a.mouse__scroll:focus {
   width: 2px;
   display: block;
   margin: 5px auto;
-  background: white;
+  background: #fff;
   position: relative;
   height: 4px;
   width: 4px;
+<<<<<<< HEAD
   border: 2px solid white;
+=======
+  border: 2px solid #fff;
+>>>>>>> 80dedf1 (After Window Update)
   border-radius: 8px;
 }
 
@@ -403,7 +408,49 @@ a.mouse__scroll:active, a.mouse__scroll:focus {
   display: inline-block;
 }
 .card__img {
+<<<<<<< HEAD
   margin-bottom: 20px;
+=======
+  position: relative;
+  display: block;
+  min-height: 190px;
+  margin-bottom: 15px;
+  background-image: url(../../img/images/images-placeholders/project_placeholder.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .card__img {
+    min-height: 150px;
+    height: 150px;
+  }
+}
+.card__img img {
+  display: block;
+}
+.card__img--hover {
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 26px;
+  color: #fff;
+  background-color: rgba(0, 82, 194, 0.9);
+  transition: top 0.5s ease-out;
+}
+.card__img--hover .fa {
+  margin-top: 40px;
+  font-size: 64px;
+  margin-bottom: 15px;
+}
+.card .card__img:hover .card__img--hover {
+  display: block;
+  top: 0%;
+  cursor: pointer;
+>>>>>>> 80dedf1 (After Window Update)
 }
 .card__title {
   margin-bottom: 12px;
@@ -707,7 +754,16 @@ a.mouse__scroll:active, a.mouse__scroll:focus {
     grid-column: 2/3;
     grid-row: 2/3;
     display: flex;
+<<<<<<< HEAD
     background-color: blue;
+=======
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    margin-bottom: 30px;
+  }
+  .resume__col {
+    margin-bottom: 0;
+>>>>>>> 80dedf1 (After Window Update)
   }
   .resume .resume__button {
     grid-column: 2/3;
